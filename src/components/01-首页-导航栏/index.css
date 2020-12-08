@@ -165,8 +165,38 @@
   display: flex;
 }
 #nav-bar .content .bottom .left {
-  background-color: deeppink;
   flex: 1;
+}
+#nav-bar .content .bottom .left .menus {
+  height: 100%;
+  display: flex;
+}
+#nav-bar .content .bottom .left .menus li {
+  position: relative;
+}
+#nav-bar .content .bottom .left .menus li.current a,
+#nav-bar .content .bottom .left .menus li:hover a {
+  color: #51b257;
+}
+#nav-bar .content .bottom .left .menus li.current::after,
+#nav-bar .content .bottom .left .menus li:hover::after {
+  content: "";
+  display: block;
+  width: calc(100% - 40px);
+  height: 5px;
+  background-color: #51b257;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#nav-bar .content .bottom .left .menus li a {
+  height: 100%;
+  line-height: 30px;
+  display: block;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #333;
 }
 #nav-bar .content .bottom .right {
   background-color: palegreen;
