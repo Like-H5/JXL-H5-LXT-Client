@@ -14,10 +14,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  transition: opacity 1s linear;
+  opacity: 0;
 }
 .like-lb .images li.current {
-  display: block;
+  opacity: 1;
 }
 .like-lb .images li a {
   width: 100%;
