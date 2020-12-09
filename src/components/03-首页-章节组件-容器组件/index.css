@@ -1,10 +1,6 @@
 @import "../../css/base.css";
-.section {
-  background-color: tomato;
-}
 .section .title-bar {
-  height: 32px;
-  background-color: darkcyan;
+  line-height: 80px;
   position: relative;
 }
 .section .title-bar .title {
