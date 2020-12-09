@@ -1,0 +1,25 @@
+@import "../../css/base.css";
+@import "../../config/colorConfig";
+
+.like-lb {
+  min-width: 1205px;
+  height: 360px;
+  background-color: tomato;
+
+  position: relative;
+  .images {
+    background-color: cyan;
+    height: 100%;
+  }
+  .titles {
+    width: 280px;
+    height: 274px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 4px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: ~"calc((100% - 1205px) / 2)";
+  }
+}
