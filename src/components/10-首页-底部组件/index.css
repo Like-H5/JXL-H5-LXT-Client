@@ -1,0 +1,21 @@
+@import "../../css/base.css";
+.footer {
+  height: 185px;
+  background-color: #474443;
+}
+.footer .content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer .content .left {
+  height: 105px;
+  flex: 2;
+  background-color: darkcyan;
+}
+.footer .content .right {
+  height: 105px;
+  flex: 1;
+  background-color: deeppink;
+}
+/*# sourceMappingURL=index.css.map */
