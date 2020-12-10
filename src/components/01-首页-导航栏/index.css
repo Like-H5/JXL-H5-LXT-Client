@@ -4,6 +4,8 @@
   background-color: #fff;
 }
 #nav-bar .content {
+  padding-top: 15px;
+  box-sizing: border-box;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -223,6 +225,7 @@
   margin-right: 5px;
 }
 #nav-bar .content .bottom .right ul li .ad-pane {
+  z-index: 998;
   width: 240px;
   background-color: #fff;
   position: absolute;
