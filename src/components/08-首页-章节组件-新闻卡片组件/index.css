@@ -23,6 +23,7 @@
   color: #51b257;
 }
 .news-card ul li span {
+  margin-left: 15px;
   min-width: 190px;
   font-size: 15px;
   color: #999;
