@@ -1,5 +1,6 @@
 @import "../../css/base.css";
 .article-item {
+  background-color: #fff;
   padding: 5px;
   border-bottom: 1px solid #999;
 }
