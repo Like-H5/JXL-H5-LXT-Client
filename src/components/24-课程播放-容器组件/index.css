@@ -1,0 +1,90 @@
+@import "../../css/base.css";
+.play-container {
+  min-width: 1205px;
+  height: 600px;
+  background-color: grey;
+  display: flex;
+}
+.play-container > .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../assets/images/courseLearn_bg.jpg);
+}
+.play-container > .left > .top {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.play-container > .left > .top .back-course {
+  width: 106px;
+  height: 25px;
+  background-image: url(../../assets/images/courseLearn.png);
+  background-position: -16px -375px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #484848;
+  font-size: 12px;
+  text-align: center;
+  line-height: 25px;
+}
+.play-container > .left > .top .pre-course {
+  width: 60px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 110px;
+  background-image: url(../../assets/images/courseLearn.png);
+  background-position: -9px -727px;
+}
+.play-container > .left > .play-pane {
+  width: calc(100% - 100px);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.play-container > .left > .play-pane .class-title {
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 0;
+}
+.play-container > .left > .play-pane .player {
+  flex: 1;
+  background-color: cyan;
+}
+.play-container > .left > .bottom {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.play-container > .left > .bottom .next-course {
+  width: 60px;
+  height: 32px;
+  position: absolute;
+  bottom: 0;
+  left: 110px;
+  background-image: url(../../assets/images/courseLearn.png);
+  background-position: -70px -723px;
+}
+.play-container > .right {
+  width: 300px;
+  background-color: darkcyan;
+}
+.play-container > .right .title {
+  height: 45px;
+  line-height: 45px;
+  color: #666;
+  text-align: center;
+  font-size: 18px;
+  background-image: url(../../assets/images/toolbar_tab_bg.png);
+  background-repeat: repeat-x;
+}
+.play-container > .right .items {
+  height: calc(100% - 45px);
+  background: green;
+  overflow-y: auto;
+}
+/*# sourceMappingURL=index.css.map */
