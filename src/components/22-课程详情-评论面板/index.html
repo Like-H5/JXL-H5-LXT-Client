@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评论面板</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+<div class="comment-pane">
+    <div class="comment-title">
+        评论
+    </div>
+    <div class="form-pane">
+        <div class="comment-score">
+            <span>给该课打分:</span>
+            <div class="star">
+                <div class="y_star" style="width: 100%;"></div>
+            </div>
+        </div>
+        <label>
+            <textarea class="comment-content" placeholder="请输入对该课程的评价"></textarea>
+        </label>
+        <div class="submit">评论</div>
+    </div>
+
+</div>
+
+
+<script>
+    let score = 5;
+    // 1. 星星评分效果
+    let star = document.getElementsByClassName("star")[0];
+    let y_star = document.getElementsByClassName("y_star")[0];
+    star.onclick = function (event) {
+        // 鼠标点击的位置
+        // console.log(event.offsetX)
+
+        // 2.3 3 2.1 3
+        score = Math.ceil(event.offsetX / star.offsetWidth * 5)
+        y_star.style.width = score / 5 * 100 + "%";
+    }
+
+</script>
+
+<script>
+    // 2. 点击评论按钮之后, 获取到用户的评价信息(分数, 评价内容)
+    let submit = document.getElementsByClassName("submit")[0];
+    let content = document.getElementsByClassName("comment-content")[0];
+    submit.onclick = function () {
+        // 获取分数, 以及评论内容
+        console.log("分数:", score);
+        let content_v = content.value
+        console.log("评论内容: ", content_v)
+
+    // 借助网络请求, 调用对应的接口, 就可以把评论信息, 传递给服务器
+
+    }
+
+
+
+</script>
+
+</body>
+</html>
