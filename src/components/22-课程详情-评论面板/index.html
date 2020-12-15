@@ -31,8 +31,8 @@
 <script>
     let score = 5;
     // 1. 星星评分效果
-    let star = document.getElementsByClassName("star")[0];
-    let y_star = document.getElementsByClassName("y_star")[0];
+    let star = document.querySelector(".comment-pane .star");
+    let y_star = document.querySelector(".comment-pane .y_star");
     star.onclick = function (event) {
         // 鼠标点击的位置
         // console.log(event.offsetX)
