@@ -89,6 +89,7 @@
   height: calc(100% - 45px);
   overflow-y: auto;
   padding: 10px;
+  box-sizing: border-box;
 }
 .play-container > .right .items .course-dg.no-view .c-view {
   display: none;
