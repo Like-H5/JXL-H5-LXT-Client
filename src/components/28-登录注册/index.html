@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<p><a href="#">撩课1</a></p>
+<p><a href="#">撩课2</a></p>
+<p><a href="#">撩课3</a></p>
+<p><a href="#">撩课4</a></p>
+<p><a href="#">撩课5</a></p>
+<p><a href="#">撩课6</a></p>
+<p><a href="#">撩课7</a></p>
+<p><a href="#">撩课8</a></p>
+<p><a href="#">撩课9</a></p>
+<p><a href="#">撩课10</a></p>
+<p><a href="#">撩课11</a></p>
+<p><a href="#">撩课12</a></p>
+<p><a href="#">撩课13</a></p>
+<p><a href="#">撩课14</a></p>
+<p><a href="#">撩课15</a></p>
+<p><a href="#">撩课16</a></p>
+<p><a href="#">撩课17</a></p>
+<p><a href="#">撩课18</a></p>
+<p><a href="#">撩课19</a></p>
+<p><a href="#">撩课20</a></p>
+<p><a href="#">撩课21</a></p>
+<p><a href="#">撩课22</a></p>
+<p><a href="#">撩课23</a></p>
+<p><a href="#">撩课24</a></p>
+<p><a href="#">撩课25</a></p>
+<p><a href="#">撩课26</a></p>
+<p><a href="#">撩课27</a></p>
+<p><a href="#">撩课28</a></p>
+<p><a href="#">撩课29</a></p>
+<p><a href="#">撩课30</a></p>
+<p><a href="#">撩课31</a></p>
+<p><a href="#">撩课32</a></p>
+<p><a href="#">撩课33</a></p>
+<p><a href="#">撩课34</a></p>
+<p><a href="#">撩课35</a></p>
+<p><a href="#">撩课36</a></p>
+<p><a href="#">撩课37</a></p>
+<p><a href="#">撩课38</a></p>
+<p><a href="#">撩课39</a></p>
+<p><a href="#">撩课40</a></p>
+<p><a href="#">撩课41</a></p>
+<p><a href="#">撩课42</a></p>
+<p><a href="#">撩课43</a></p>
+<p><a href="#">撩课44</a></p>
+<p><a href="#">撩课45</a></p>
+<p><a href="#">撩课46</a></p>
+<p><a href="#">撩课47</a></p>
+<p><a href="#">撩课48</a></p>
+<p><a href="#">撩课49</a></p>
+<p><a href="#">撩课50</a></p>
+
+
+<div class="lr-mask">
+    <div class="lr-pane">
+        <span class="close iconfont icon-icon_close"></span>
+        <ul class="tabs">
+            <li class="current">账号登录</li>
+            <li>立即注册</li>
+        </ul>
+        <ul class="panes">
+            <li class="current">
+                <form action="#">
+                    <label>
+                        <span class="iconfont icon-yonghu"></span>
+                        <input name="account" type="text" placeholder="请输入账号">
+                    </label>
+
+                    <label>
+                        <span class="iconfont icon-mima1"></span>
+                        <input name="pwd" type="password" placeholder="请输入密码">
+                    </label>
+
+                    <input class="btn" type="submit" value="立即登录">
+
+                </form>
+            </li>
+            <li>
+
+                <form action="#">
+                    <label>
+                        <span class="iconfont icon-yonghu"></span>
+                        <input name="account" type="text" placeholder="请输入账号">
+                    </label>
+
+                    <label>
+                        <span class="iconfont icon-mima1"></span>
+                        <input name="pwd" type="text" placeholder="请输入密码">
+                    </label>
+
+                    <label>
+                        <span class="iconfont icon-querenmima"></span>
+                        <input name="pwd" type="text" placeholder="请再次输入密码">
+                    </label>
+
+                    <input class="btn" type="submit" value="立即注册">
+
+                </form>
+
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script>
+
+    let currentIndex = 0;
+
+    let tabs = document.querySelectorAll(".lr-pane .tabs li");
+    let panes = document.querySelectorAll(".lr-pane .panes li");
+
+
+    for (let i = 0, len = tabs.length; i < len; i++) {
+        let tab = tabs[i];
+        tab.onclick = function () {
+            tabs[currentIndex].className = "";
+            tab.className = "current";
+
+            panes[currentIndex].className = "";
+            panes[i].className = "current";
+
+            currentIndex = i;
+        }
+    }
+
+
+</script>
+
+
+</body>
+</html>
