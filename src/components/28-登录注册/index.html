@@ -59,9 +59,9 @@
 <p><a href="#">撩课50</a></p>
 
 
-<div class="lr-mask">
+<div class="lr-mask show">
     <div class="lr-pane">
-        <span class="close iconfont icon-icon_close"></span>
+        <span class="close iconfont icon-icon_close" onclick="hideMask()"></span>
         <ul class="tabs">
             <li class="current">账号登录</li>
             <li>立即注册</li>
@@ -110,6 +110,20 @@
         </ul>
     </div>
 </div>
+
+
+<script>
+
+    function hideMask() {
+        let lr_mask = document.getElementsByClassName("lr-mask")[0];
+        lr_mask.className = "lr-mask"
+    }
+    function showMask() {
+        let lr_mask = document.getElementsByClassName("lr-mask")[0];
+        lr_mask.className = "lr-mask show"
+    }
+
+</script>
 
 
 <script>
