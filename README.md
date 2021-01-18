@@ -4,6 +4,7 @@
 > - 组织地址: https://github.com/orgs/Like-H5
 > - 团队地址: https://github.com/orgs/Like-H5/teams/h5
 > - 仓库地址: git@github.com:Like-H5/JXL-H5-LXT-Client.git
+> - 演示地址: https://like-h5.github.io/JXL-H5-LXT-Client/dist/index.html
 
 
 ### 二. 创建项目开发的文件组织结构
